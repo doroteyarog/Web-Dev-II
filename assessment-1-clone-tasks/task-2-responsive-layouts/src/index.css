@@ -1,0 +1,72 @@
+:root {
+  /* Brand colors */
+  --color-black: #070410;
+  --color-navy: #231651;
+  --color-teal: #4DCCBD;
+  --color-yellow: #EEF36A;
+  --color-white: #FFFFFF;
+
+  --space-small: 16px;
+  --space-large: 16px;
+
+  /* Font sizes */
+  --font-logo: 2em;
+  --font-btn: 2em;
+  --font-card: 1.5em;
+}
+
+/* Tablet breakpoint: 720px */
+@media (min-width: 720px) {
+  :root {
+    --space-small: 16px;
+    --space-large: 32px;
+    --font-logo: 3em;
+  }
+}
+
+/* Desktop breakpoint: 1024px */
+@media (min-width: 1024px) {
+  :root {
+    --space-small: 16px;
+    --space-large: 48px;
+    --font-logo: 3em;
+  }
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--color-navy);
+  color: var(--color-black);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .btn-action, .brand-logo {
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
